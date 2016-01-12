@@ -23,20 +23,38 @@
       <div id="blanks">
         <form>
           <div class="form-group">
-            <label for="personName">Type your full name.</label>
-            <input id="personName" class="form-control" type="text">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
           </div>
           <div class="form-group">
             <label for="datepicker">Date</label>
-            <input id="datepicker" class="form-control" type="text">
+            <input id="datepicker" class="form-control" type="text" placeholder="Date">
           </div>
           <div class="form-group">
-            <label for="startTime">Start time</label>
-            <input id="startTime" class="form-control" type="text">
+            <label for="startTime">Start Time</label>
+            <input id="startTime" class="form-control" type="text" placeholder="Start Time">
           </div>
           <div class="form-group">
-            <label for="endTime">End time</label>
-            <input id="endTime" class="form-control" type="text">
+            <label for="endTime">End Time</label>
+            <input id="endTime" class="form-control" type="text" placeholder="End Time">
+          </div>
+          <h3>Vegetarian?</h3>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="veg"> Yes please!
+            </label>
+          </div>
+          <h3>Select your favorite food.</h3>
+          <div class="radio">
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Hamburger" checked> Hamburger
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Pizza"> Pizza
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="HotDog"> HotDog
+            </label>
           </div>
           <button type="submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
         </form>
@@ -53,10 +71,12 @@
           <div class="modal-body">
             <h2>Thanks for booking an appointment!</h2>
             <h4>Below are the details:</h4>
-            <div id="confirmName"></div>
+            <div id="confirmEmail"></div>
             <div id="confirmDate"></div>
             <div id="confirmStartTime"></div>
             <div id="confirmEndTime"></div>
+            <div id="confirmVeg"></div>
+            <div id="confirmFood"></div>
 
 
           </div>
